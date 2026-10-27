@@ -41,9 +41,9 @@
       <td>Sent to our server (hosted by Supabase) when you sign in with Google.</td>
     </tr>
     <tr>
-      <td><b>Card set codes you look up</b> (for example, DOOD-EN010)</td>
-      <td>To get current card prices.</td>
-      <td>Sent to our server, which looks up prices from JustTCG. JustTCG receives only the card or set being looked up, not who you are.</td>
+      <td><b>Card set codes and names you look up</b> (for example, DOOD-EN010)</td>
+      <td>To get current card prices, and a picture of the card when you open it in the card viewer.</td>
+      <td>Sent to our server, which looks up prices from JustTCG and card pictures from a public card database (YGOPRODeck). Those services receive only the card or set being looked up, not who you are.</td>
     </tr>
     <tr>
       <td><b>Plan and usage counts</b> (how many scans, lookups and new sets you used today)</td>
@@ -75,6 +75,7 @@
     <li><b>Google Sign-In</b>: to sign you in with your Google account.</li>
     <li><b>Supabase</b>: hosts our server, sign-in system and database.</li>
     <li><b>JustTCG</b>: provides card price data. It receives card and set codes from our server, not your personal information.</li>
+    <li><b>YGOPRODeck</b>: provides card pictures. Our server downloads each picture once and stores it; your information is never sent to it.</li>
     <li><b>Google ML Kit</b>: reads text from the camera on your phone, without sending images to us.</li>
     <li><b>Google Play</b>: app distribution and, if you buy a plan, payments.</li>
   </ul>
